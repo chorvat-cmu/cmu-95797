@@ -1,7 +1,7 @@
 import duckdb
 import glob
 
-conn = duckdb.connect('duckdb_data')
+conn = duckdb.connect(database=':memory:')
 
 csv_directory = 's3data/data/*.csv'
 
